@@ -2,16 +2,21 @@
 /* (im)ROOT */
 :root{
   text-align: left;
+  overflow: hidden;
 }
 /* Class specifikt CSS */
 .section{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
     text-align: center;
 }
 
 .txt{
     color: black;
     font-size: x-large;
-    text-decoration: underline;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .pictures {
     width: 300px;
@@ -21,3 +26,6 @@
 
 
 /* Id specifikt CSS */
+#TxtPage0 p{
+    width: 60%;
+}
