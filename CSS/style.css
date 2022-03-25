@@ -1,6 +1,23 @@
 
-
+/* (im)ROOT */
+:root{
+  text-align: left;
+}
+/* Class specifikt CSS */
 .section{
     text-align: center;
 }
 
+.txt{
+    color: black;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.pictures {
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+
+/* Id specifikt CSS */
