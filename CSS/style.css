@@ -1,6 +1,9 @@
 
 /* (im)ROOT */
 :root{
+    margin:0;
+    padding: 0;
+    border: 0;
   text-align: left;
   overflow: hidden;
 }
@@ -9,23 +12,41 @@
     height: 100vh;
     width: 100vw;
     overflow-y: hidden;
-    text-align: center;
+
 }
 
 .txt{
+    z-index: 100000;
+    position: absolute;
     color: black;
     font-size: x-large;
     margin-left: 10%;
     margin-right: 10%;
 }
-.pictures {
-    width: 300px;
-    height: 300px;
-    position: relative;
-}
 
+.pictures {
+    position: absolute;
+    z-index: 5;
+}
 
 /* Id specifikt CSS */
 #TxtPage0 p{
     width: 60%;
+}
+
+
+/* Pictures positions */
+
+/* Page 1: */
+#thunder {
+    position: absolute;
+    top: 10%;
+    right: 40%;
+}
+
+/* Page 2: */
+#thunder2-2 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
 }
