@@ -9,8 +9,12 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
 var player1;
+var player2;
+var player3;
+var player4;
+var player5;
 function onYouTubeIframeAPIReady() {
-player2 = new YT.Player('player1', {
+player1 = new YT.Player('player1', {
     height: 'auto',
     width: 'auto',
     videoId: 'ohFNXh4UZY8',
@@ -22,7 +26,7 @@ player2 = new YT.Player('player1', {
         'onStateChange': onPlayerStateChange
     }
     }), 
-  player1 = new YT.Player('player2', {
+  player2 = new YT.Player('player2', {
     height: 'auto',
     width: 'auto',
     videoId: 'ORYe6DrQCs8',
@@ -35,7 +39,7 @@ player2 = new YT.Player('player1', {
     }
   }
   ),
-  player2 = new YT.Player('player3', {
+  player3 = new YT.Player('player3', {
     height: 'auto',
     width: 'auto',
     videoId: 'bB0wSBXOalQ',
@@ -47,7 +51,7 @@ player2 = new YT.Player('player1', {
       'onStateChange': onPlayerStateChange
     }
   }),
-  player2 = new YT.Player('player4', {
+  player4 = new YT.Player('player4', {
     height: 'auto',
     width: 'auto',
     videoId: 'LtXOAKOyrJg',
@@ -59,7 +63,7 @@ player2 = new YT.Player('player1', {
       'onStateChange': onPlayerStateChange
     }
   }),
-  player2 = new YT.Player('player5', {
+  player5 = new YT.Player('player5', {
     height: 'auto',
     width: 'auto',
     videoId: 'cQaqpRuTRO4',
