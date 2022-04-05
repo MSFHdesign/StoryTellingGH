@@ -1,17 +1,17 @@
 
-/* (im)ROOT */
-:root{
+
+/* Class specifikt CSS */
+.section{
+
     margin:0;
     padding: 0;
     border: 0;
   text-align: left;
   overflow: hidden;
-}
-/* Class specifikt CSS */
-.section{
-    height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
     overflow-y: hidden;
+    overflow-x: hidden;
 
 }
 
@@ -19,34 +19,472 @@
     z-index: 100000;
     position: absolute;
     color: black;
-    font-size: x-large;
+    font-size: 2.5rem;
     margin-left: 10%;
     margin-right: 10%;
 }
 
 .pictures {
     position: absolute;
-    z-index: 5;
+    width: 300px;
+    height: 300px;
+    z-index: 1000;
 }
 
 /* Id specifikt CSS */
-#TxtPage0 p{
-    width: 60%;
+#TxtPage0{
+    font-size: 2.5rem;
+    position: relative;
+    width: 86%;
+    left: 0;
+    top: -15%
 }
 
 
 /* Pictures positions */
 
-/* Page 1: */
-#thunder {
-    position: absolute;
-    top: 10%;
-    right: 40%;
+/* Page Forside: */
+
+#hovedPersonPage1{
+    position: relative;
+    top: 39%;
+    left: 0%;
+    transform: scale(4);
 }
 
-/* Page 2: */
-#thunder2-2 {
-    position: absolute;
-    top: 50%;
-    left: 30%;
+#shadowPeople{
+    top: 55%;
+    right: 49%;
+    transform: scaleX(1.3);
+    animation-name: ShadowPeople;
+    animation-duration: 5s;
+
+} 
+@keyframes ShadowPeople {
+    0% {right: 0%; top:70%; transform: scaleX(1);}
+    100% {right: 49%; top: 55%;  transform: scaleX(2);}
 }
+
+
+#tree1{
+    z-index: 5;
+    position: absolute;
+    right: -7%;
+    top: 30%;
+}
+
+#tree2{
+    z-index: 10;
+    right: 0;
+    top: 35%;
+}
+
+#skole {
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    height: 60%;
+    left: 13%;
+    top: 19%;
+}
+
+
+/* Page 1 */
+
+#Uret {
+    top: -50%;
+    left: 10%;
+
+}
+
+#minVisere{
+    width: 90%;
+    height: 50%;
+    top: -25%;
+    left: 13%;
+    transform: rotate(-90deg);
+    animation-name: minAnimation;
+    animation-duration: 5s;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;  
+}
+  
+
+#secVisere{
+
+    width: 90%;
+    height: 40%;
+    top: -20%;
+    left: 13%;
+    transform: rotate(-90deg);
+    animation-name: secAnimation;
+    animation-duration: 1s;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;  
+}
+
+@keyframes secAnimation {
+    0%   {transform:rotate(-90deg)}
+    100% {transform: rotate(270deg)}
+  }
+
+
+/* Page 1 */
+#TxtPage1 {
+    width: 50%;
+    right: 0;
+    top: 20%;
+}
+
+
+#kalender1 {
+    left: 28%;
+    top: -100%;
+}
+
+#kalender2 {
+    left: 253%;
+    top: 22%;
+}
+#kalender3 {
+    left: 120%;
+    top: 28%;
+}
+
+#kalender4 {
+    left: 88%;
+    top: -15%;
+    animation-name: kalenderAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction:normal;
+    animation-delay: 0s;  
+}
+
+
+@keyframes kalenderAnimation {
+    0% {left: 28%; top: -100%;}
+    100% {left: 88%; top: -15%;}    
+}
+
+#hPgravid{
+    transform:scale(3.5);
+}
+
+#babyglad {
+    left: 50%;
+    top: 30%;
+
+}
+/* Page 2 */
+
+#TxtPage2{
+    width: 37%;
+    left: 40%;
+    top: 64%;
+}
+#skoleP2{
+    z-index: 1;
+    width: 80%;
+    height: 60%;
+    left: 10%;
+    top: 10%;
+}
+#thunder1 {
+    height: 30%;
+    z-index: 5;
+    left: 1%;
+    top:27%;
+    animation-name: thunderOneAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;  
+}
+
+
+#cloud1{
+    width: 700px;
+    z-index: 10;
+    top: 0%;
+    left: 1%;
+}
+#thunder2{
+    width: 30%;
+    left: 22%;
+    top: 15%;
+    z-index: 5;
+    animation-name: thunderOneAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;  
+}
+
+#cloud2{
+    width: 30%;
+    right: 0%;
+    top: -5%;
+    
+}
+
+#thunder3{
+    transform: scaleX(-1);
+    width: 30%;
+    right: 0%;
+    top: 10%;
+    z-index: 4;
+    animation-name: thunderOneAnimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;  
+}
+@keyframes thunderOneAnimation {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+  
+}
+#HPpage2{
+    top: 50%;
+    left: 18%;
+    transform: scale(4);
+}
+#tree2P2{
+    z-index: 5;
+    position: absolute;
+    right: -7%;
+    top: 30%;
+}
+
+#tree1P2{
+    z-index: 10;
+    right: 0;
+    top: 35%;
+}
+
+/* PAGE 3 */
+
+#TxtPage3 {
+    width: 37%;
+    left: 2%;
+    top: 25%;
+}
+
+
+#BGbaby {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#opgaver{
+    left: 72%;
+    top: 52%;
+    z-index: 1100;
+    transform: scale(4);
+}
+
+
+
+/* PAGE 4 */
+
+#TxtPage4{
+    width: 46%;
+    left: 3%;
+    top: 58%;
+}
+
+#classRoom{
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#bordet{
+    top: 67%;
+    right: 5%;
+    transform: scale(1.9)
+}
+
+#groupTable{
+    top: 33%;
+    left: 25%;
+    transform: scale(0.9);
+}
+#multimusen{
+    top: 21%;
+    left: 18%;
+    transform: scale(0.6);
+    z-index: 10000;
+}
+
+#musarm{
+    top: 37%;
+    left: 31%;
+    width: 8%;
+    height: 5%;
+    z-index: 1010;
+    animation-name: MultiMusenArm;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-delay: 1s; 
+}
+
+@keyframes MultiMusenArm {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(40deg);}
+    100% {transform: rotate(0deg);}
+    
+}
+
+#computer{
+    top: 24%;
+    left: 35%;
+    WIDTH: 10%;
+    transform:rotateY(160deg);
+    z-index: 1000;
+}
+#godFe1{
+top: 1%;
+left: 50%;
+transform:scale(0.5);
+animation-name: godFe1Animation;
+animation-duration: 6s;
+animation-timing-function: ease-in-out;
+animation-direction:normal;
+animation-iteration-count: infinite;
+animation-delay: 1s;  
+}
+@keyframes godFe1Animation {
+    0%   {left: 50%;}
+    50% {left: 30%;}
+    100% {left: 50%;}
+    
+    }
+
+
+#godFe2 {
+top: 1%;
+left: 1%;
+transform: scale(0.5);
+animation-name: godFe2Animation;
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-direction:normal;
+animation-iteration-count: infinite;
+animation-delay: 1s;  
+}
+@keyframes godFe2Animation {
+0%   {left: 1%;}
+50% {left: 5%;}
+100% {left: 1%;}
+
+}
+
+
+
+
+
+/* PAGE 5 */
+
+#TxtPage5{
+    width: 49%;
+    left: 10%;
+    top: 64%;
+}
+
+#klasse1{
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#classMate{
+    left: 58%;
+    top: 44%;
+    transform: scale(3.0);
+}
+
+#classMate2 {
+    left: 66%;
+    top: 45%;
+    transform: scale(1.0);
+}
+
+#bordetPage5{
+    left: 55%;
+    top: 53%;
+    transform: scale(1);
+}
+
+#HPBag{
+    left: 48%;
+    top: 54%;
+    transform: scale(4.0)
+
+}
+
+#tale1{
+    left: 49%;
+    top: 17%;
+    opacity: 0;
+    transform: scale(0.6);
+    animation: taleAnimation 5s infinite ease-in-out;
+    animation-direction:normal;
+    animation-delay: 12s;  
+}
+
+@keyframes taleAnimation {
+0%   {opacity: 1;}
+25% {opacity: 0;}
+50% {opacity: 1;}
+100% {opacity: 0;}
+}
+
+/* Section 6 */
+#GodFe1S6 {
+    left: 10%;
+    top: 10%;
+    transform: scale(1.0);
+}
+
+#GodFe2S6 {
+    left: 40%;
+    top: 10%;
+    transform: scale(1.0);
+}
+
+#MultiMusS6 {
+    left: 25%;
+    top: 10%;
+    transform: scale(1.0);
+}
+
+/* Section 7 */
+#superMom {
+    top: 36%;
+    left: 37%;
+    transform: scale(7)
+}
+
+
+#flexplayer {
+    display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    max-width: 100%;
+    max-height: 100%;
+    height: 30%;
+    overflow-y: scroll;
+}
+
