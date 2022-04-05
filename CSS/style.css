@@ -1,7 +1,7 @@
 
 
 /* Class specifikt CSS */
-.section{
+section{
 
     margin:0;
     padding: 0;
@@ -37,7 +37,7 @@
     position: relative;
     width: 86%;
     left: 0;
-    top: -15%
+    top: -33%
 }
 
 
@@ -46,8 +46,8 @@
 /* Page Forside: */
 
 #hovedPersonPage1{
-    position: relative;
-    top: 39%;
+
+    top: 85%;
     left: 0%;
     transform: scale(4);
 }
@@ -140,22 +140,23 @@
 
 
 #kalender1 {
-    left: 28%;
-    top: -100%;
+    left: 1%;
+    top: 1%;
 }
 
 #kalender2 {
-    left: 253%;
-    top: 22%;
+    left: 13%;
+    top: 56%;
+
 }
 #kalender3 {
-    left: 120%;
-    top: 28%;
+    left: 34%;
+    top: 62%;
 }
 
 #kalender4 {
-    left: 88%;
-    top: -15%;
+    left: 4%;
+    top: 5%;
     animation-name: kalenderAnimation;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -166,24 +167,25 @@
 
 
 @keyframes kalenderAnimation {
-    0% {left: 28%; top: -100%;}
-    100% {left: 88%; top: -15%;}    
+    0% {left: 4%; top: 5%;}
+    100% {left: 13%; top: 56%;}    
 }
 
 #hPgravid{
     transform:scale(3.5);
+    left: 0;
 }
 
 #babyglad {
-    left: 50%;
-    top: 30%;
-
+    left: 76%;
+    top: 50%;
+    transform: scale(2.5);
 }
 /* Page 2 */
 
 #TxtPage2{
-    width: 37%;
-    left: 40%;
+    width: 64%;
+    left: 19%;
     top: 64%;
 }
 #skoleP2{
@@ -303,9 +305,10 @@
 }
 
 #classRoom{
-    top: 0;
+    top: -2%;
     width: 100%;
     height: 100%;
+    left: 0px;
 }
 
 #bordet{
@@ -398,12 +401,13 @@ animation-delay: 1s;
 /* PAGE 5 */
 
 #TxtPage5{
-    width: 49%;
+    width: 72%;
     left: 10%;
     top: 64%;
 }
 
 #klasse1{
+    left: 0;
     top: 0;
     width: 100%;
     height: 100%;
@@ -452,6 +456,11 @@ animation-delay: 1s;
 }
 
 /* Section 6 */
+#TxtPage6 {
+    width: 74%;
+    left: 0;
+}
+
 #GodFe1S6 {
     left: 10%;
     top: 10%;
@@ -474,14 +483,18 @@ animation-delay: 1s;
 #superMom {
     top: 36%;
     left: 37%;
-    transform: scale(7)
+    transform: scale(9)
 }
 
+#TxtPage7 {
+    width: 74%;
+    left: 0;
+}
 
 #flexplayer {
     display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     max-width: 100%;
     max-height: 100%;
     height: 30%;
