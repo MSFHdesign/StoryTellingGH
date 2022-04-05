@@ -344,26 +344,7 @@ section{
     z-index: 10000;
 }
 
-#musarm{
-    top: 37%;
-    left: 31%;
-    width: 8%;
-    height: 5%;
-    z-index: 1010;
-    animation-name: MultiMusenArm;
-    animation-duration: 6s;
-    animation-timing-function: ease;
-    animation-direction:normal;
-    animation-iteration-count: infinite;
-    animation-delay: 1s; 
-}
 
-@keyframes MultiMusenArm {
-    0% {transform: rotate(0deg);}
-    50% {transform: rotate(40deg);}
-    100% {transform: rotate(0deg);}
-    
-}
 
 #computer{
     top: 24%;

@@ -73,8 +73,7 @@ document.getElementById('s6').innerHTML= `
 <img src="img/klasse.svg" alt="klasselokale" class="pictures" id="classRoom">
 <img src="img/bord.svg" alt="bordet" class="pictures" id="bordet">
 <img src="img/gruppebord.svg" alt="gruppebordet" class="pictures" id="groupTable">
-<img src="img/mus3.svg" alt="Multimusen" class="pictures" id="multimusen">
-<img src="img/mushaand.svg" alt="" class="pictures" id="musarm">
+<img src="img/mus2.svg" alt="Multimusen" class="pictures" id="multimusen">
 <img src="img/computer.svg" alt="computeren" class="pictures" id="computer">
 <img src="img/fe1.svg" alt="den gode fe 1" class="pictures" id="godFe1">
 <img src="img/fe3.svg" alt="den gode fe 2" class="pictures" id="godFe2">
