@@ -2,17 +2,15 @@
 
 /* Class specifikt CSS */
 section{
-
     margin:0;
     padding: 0;
     border: 0;
-  text-align: left;
-  overflow: hidden;
+    text-align: left;
+    overflow: hidden;
     max-width: 100vw;
     max-height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
-
 }
 
 .txt{
@@ -375,7 +373,6 @@ animation-delay: 1s;
     
     }
 
-
 #godFe2 {
 top: 1%;
 left: 1%;
@@ -387,6 +384,7 @@ animation-direction:normal;
 animation-iteration-count: infinite;
 animation-delay: 1s;  
 }
+
 @keyframes godFe2Animation {
 0%   {left: 1%;}
 50% {left: 5%;}
