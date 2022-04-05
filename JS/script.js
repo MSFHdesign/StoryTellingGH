@@ -1,4 +1,4 @@
-const TIME_OUT = 1000 
+const TIME_OUT = 600 // It should be the same transition time of the sections
 const body = document.querySelector('body')
 const sectionsQty = document.querySelectorAll('section').length
 const sectionStick = document.querySelector('.section-stick')
@@ -9,7 +9,7 @@ let qty = 1,
   main = null,
   next = null
 
-// Add child elements in .section-stick
+// Add child elements in .section-stick as number of sections exist
 Array(sectionsQty)
   .fill()
   .forEach(() => {
@@ -18,7 +18,7 @@ Array(sectionsQty)
 
 console.log('SLIDE', qty)
 
-// scroll event
+// Listening to scroll event
 window.onscroll = () => {
   if (startFlag) {
     const scrollDown = this.scrollY >= initialScroll
@@ -43,7 +43,7 @@ window.onscroll = () => {
         main.style.transform = 'translateY(0)'
         next.style.transform = 'translateY(100vh)'
 
-        qty
+        qty--
       }
 
       // Scroll progressbar
@@ -66,5 +66,3 @@ window.onscroll = () => {
   // Keep scrollbar in the middle of the viewport
   window.scroll(0, window.screen.height)
 }
-
-

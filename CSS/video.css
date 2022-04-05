@@ -1,0 +1,30 @@
+.layout p {
+    font-size: 1.5rem;
+}
+
+#flexplayer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-column-gap: 5%;
+}
+
+.players {
+    width: 40%;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  a {
+      text-decoration: none;
+      color: black;
+  }
