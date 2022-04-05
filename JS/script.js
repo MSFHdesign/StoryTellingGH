@@ -43,7 +43,7 @@ window.onscroll = () => {
         main.style.transform = 'translateY(0)'
         next.style.transform = 'translateY(100vh)'
 
-        qty--
+        qty
       }
 
       // Scroll progressbar
@@ -187,7 +187,7 @@ document.getElementById('s9').innerHTML= `
   </div>`;
 
 
-
+/*
   document.getElementById('s10').innerHTML= `      <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
   <div id="flexplayer">
   <div><p>Hvorfor valgte i at studere efter i har fået barn/børn?</p><div id="player1"></div></div>
@@ -202,4 +202,4 @@ document.getElementById('s9').innerHTML= `
   <div><p>Hvorfor valgte i at studere på Aarhus Erhvervsakademi?</p><div id="player5"></div></div>
 
 </div>
-`;
+`;*/
