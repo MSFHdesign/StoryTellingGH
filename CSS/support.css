@@ -1,22 +1,65 @@
+/* Den store stærke wrap der dominere AAAALT */
 #wrap {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
     background-color: #C7976F;
+    width: 100vw;
+    height: 100%;
+}
+/* Links meget flotte udsmykning */
+a {
+    text-decoration: none;
 }
 
+/* Den store overskrift */
+h1 {
+
+    font-size: 10rem;
+}
+
+/* Flexbox som styre de mange kasse der skal flexe */
 .flexBox {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 
 }
+/* De flotte SoMeLogoer som skal have den samme style styres her */
+.SoMelogo{
+    width: 100px;
+    height: 100px;
+}
 
+ /* facebook opslags billederne kontroltårn */
 .FBpic {
     width: 40%;
     height: auto;
 }
-
+/* Instagram billedernes kontroltårn */
 .IGpic{
     width: 40%;
     height: auto;
 }
-
+ /* Den ene afstikker der liiiige skal have lidt ekstra kærlighed */
 #IG2 {
     border: 1px solid white;
 }
+
+/* Det fine streger der omkredser contenten i kasserne */
+
+fieldset {
+    width: 90%;
+    height: 90%;
+}
+
+
+ /* I AM ... */
+legend {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: solid;
+}
+

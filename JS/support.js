@@ -2,7 +2,7 @@
 var password; 
 var pass1="meget_hemmeligt"; /* Det er koden */
 
-password=prompt('Hva\' koden?',''); /* Det er userinput til at skrive koden  */
+password=prompt('Hva\' koden?','Den er meget hemmeligt'); /* Det er userinput til at skrive koden  */
 if (password==pass1) {  /* Hvis man er værdi til at forsætte */
 alert('Koden er ...korrekt! Du er værdig til at forsætte'); 
 document.getElementById('wrap').innerHTML = `
@@ -10,11 +10,12 @@ document.getElementById('wrap').innerHTML = `
 
 <h1>Supportside</h1> 
 <nav id="navbar"></nav> <!-- Navbar-->
-<div class="flexBox"> <!-- Flexbox kontroltorn, genbruges flere gange -->
+<div class="flexBox"> <!-- Flexbox kontroltårn, genbruges flere gange -->
 <div id="SoMeLogo"> <!-- SoMe logo m. links -->
-    <img src="" alt=""> 
-    <img src="" alt=""> 
-    <img src="" alt="">
+    <a href="https://www.facebook.com/akademiaarhus/"><img src="supportimg/FBlogo.png" alt="Facebook meget flotte logo" class="SoMelogo"> </a>
+    
+    <a href="https://www.instagram.com/erhvervsakademiaarhus/"><img src="supportimg/IGlogo.png" alt="Instagraaaam her er duuuu" class="SoMelogo"> </a>
+    <a href="tiktok.com/EAAA"><img src="supportimg/TTlogo.png" alt="Hva helehulen er tiktok? Åbenbart noget ed unge bruger" class="SoMelogo"></a>
 </div>
 <!-- Sweetspot billede-->
 <div id="sweetSpot"> <img src="" alt=""></div>
@@ -43,30 +44,36 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt reiciendis natus 
 </div>
 
 
-<div class="flexBox"> <!-- ./flex -->
+
 <!--Facebook Opslag-->
 <fieldset id="Facebook">
     <legend>Facebook post</legend>
+    <div class="flexBox"> <!-- ./flex -->
     <img src="supportimg/FB-less.png" alt="Facebook post, der visere det første man ser når der scrolles" id="FB1" class="FBpic">
     <img src="supportimg/FB-mere.png" alt="når der trykkes på mere så kan den fulde tekst læses">
-</fieldset>
-</div>
+    </div>
+    </fieldset>
+
 <!--Instagram opslag -->
-<div class="flexBox"></div>
+
 <fieldset id="Instagram">
     <legend>Instagram post</legend>
+    <div class="flexBox"> <!-- ./flex -->
     <img src="supportimg/insta1.png" alt="De fem gode råd" id="IG1" class="IGpic">
     <img src="supportimg/insta3.png" alt="Instagram post nummer 3" id="IG3" class="IGpic">  
     <img src="supportimg/insta2.png" alt="Instagram post nummer 2" id="IG2" class="IGpic"> 
-</fieldset>
-</div>
+    </div>
+    </fieldset>
+
 
 <!--TikTok opslag-->
-<div class="flexBox">
+
     <fieldset id="tikTok">
         <legend>Tiktok post</legend>
+        <div class="flexBox"> <!-- ./flex -->
         <img src="" alt="">
         <img src="" alt="">
+        </div>
     </fieldset>
 
 
