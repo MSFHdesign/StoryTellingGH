@@ -78,8 +78,6 @@ player1 = new YT.Player('player1', {
   
   
   
-  
-  
 }
 
 
