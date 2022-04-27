@@ -1,4 +1,22 @@
+#wrap {
+    background-color: #C7976F;
+}
+
 .flexBox {
     display: flex;
-    
+
+}
+
+.FBpic {
+    width: 40%;
+    height: auto;
+}
+
+.IGpic{
+    width: 40%;
+    height: auto;
+}
+
+#IG2 {
+    border: 1px solid white;
 }
