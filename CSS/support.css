@@ -62,4 +62,22 @@ legend {
     font-size: 30px;
     text-decoration: solid;
 }
+/* Kalenderen der viser vores samlede værk */
+#SoMeCalender {
+    width: 90vw;
+}
+/* TOOOOONEN ER LAAAAAAAAAGT */
+#TOV {
+    width: 30%;
+}
 
+#SweetSpot {
+    width: 50%;
+    height: 50%;
+    transform: scale(3);
+}
+
+#SEOmap {
+    width: 50%;
+    height: 50%;
+}

@@ -13,6 +13,8 @@ var player2;
 var player3;
 var player4;
 var player5;
+var player6;
+var player7;
 function onYouTubeIframeAPIReady() {
 player1 = new YT.Player('player1', {
     height: 'auto',
@@ -63,6 +65,30 @@ player1 = new YT.Player('player1', {
       'onStateChange': onPlayerStateChange
     }
   }),
+  player6 = new YT.Player('player6', {
+    height: 'auto',
+    width: 'auto',
+    videoId: 'U9k2qwUHK6A',
+    playerVars: {
+      'playsinline': 1
+    },
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  }),
+  player7 = new YT.Player('player7', {
+    height: 'auto',
+    width: 'auto',
+    videoId: '8xEuT8BLtxs',
+    playerVars: {
+      'playsinline': 1
+    },
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  }),
   player5 = new YT.Player('player5', {
     height: 'auto',
     width: 'auto',
@@ -102,7 +128,8 @@ function stopVideo() {
   player3.stopVideo();
   player4.stopVideo();
   player5.stopVideo();
-
+  player6.stopVideo();
+  player7.stopVideo();
 }
 
 

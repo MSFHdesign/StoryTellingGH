@@ -2,8 +2,8 @@
 var password; 
 var pass1="meget_hemmeligt"; /* Det er koden */
 
-password=prompt('Hva\' koden?','Den er meget hemmeligt'); /* Det er userinput til at skrive koden  */
-if (password==pass1) {  /* Hvis man er værdi til at forsætte */
+password=prompt('Hva\' koden?','meget "understreg" hemmeligt'); /* Det er userinput til at skrive koden  */
+if (password==pass1) {  /* Hvis man er værdig til at forsætte */
 alert('Koden er ...korrekt! Du er værdig til at forsætte'); 
 document.getElementById('wrap').innerHTML = `
 
@@ -18,30 +18,37 @@ document.getElementById('wrap').innerHTML = `
     <a href="tiktok.com/EAAA"><img src="supportimg/TTlogo.png" alt="Hva helehulen er tiktok? Åbenbart noget ed unge bruger" class="SoMelogo"></a>
 </div>
 <!-- Sweetspot billede-->
-<div id="sweetSpot"> <img src="" alt=""></div>
+
+<img src="supportimg/sweet_spot1.svg" alt="that sweet sweet spot" id="SweetSpot"></div>
 </div>
     <!-- content kalender med hvor og hvornår -->
 <div id="contentCalender">
-
+<img src="supportimg/content_kalender_some.png" id="SoMeCalender" alt="kalenderen med content af hvem har ansvaret for hvad">
 </div>
 <!-- UCG -->
     <fieldset id="UCG">
         <legend>UCG</legend>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nihil, ad distinctio fugiat repudiandae cumque, a dignissimos aliquam odio ipsa assumenda, fuga quidem accusamus aspernatur maxime officiis omnis? Commodi, velit!
+        <p> Vi bruger vores Facebook post for at generer UGC, hvor læsere kan sende billede af deres hverdag og ”eventyr” fra studietiden, disse billeder kan bruges til fremtidige post på fx Instagram. </p>
       </fieldset>
     
 <!-- SEO keywords-->
 <fieldset id="keyWords">
     <legend>Keywords</legend>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt reiciendis natus molestiae culpa? Molestias alias molestiae odit, aliquam consequatur excepturi. Tempora minus nulla magnam molestiae illo tempore minima natus placeat.
+    For at finde keywords til vores SEO, startede vi med at tage et kig på Google Trends. Men da vi har et forholdsvis nyt emne, i form af studerende som forældre, kom der ikke så meget frem. 
+    Derfor gik vi over til en brainstorm, via et mindmap, hvor vi skrev alle de ord ned som kunne være relevante, samt de ting som vi kunne finde via Google Trends.
+    Det vi fandt frem til at være et væsentligt emne, er økonomi, som også er noget andre studerende ville kunne være interesseret i at få information om.
+    Derfor har vi i nogle af postsene lavet en form for tips og råd-serie, hvor økonomien kommer i fokus, f.eks. med et #su hashtag. 
+    <img src="supportimg/mindmap.JPG" alt="SEO keyords" id="SEOmap">
 </fieldset>
 
 <div class="flexBox"> <!-- ./flex -->
     <!-- Tone of voice -->
-    <img src="" alt="">
+    <img src="supportimg/toneofvoice.png" alt="Tone er lagt" id="TOV">
     <!-- Design manual-->
-    <img src="" alt="">
-</div>
+    <a href="supportimg/SOME-designguide.pdf" download>
+  <img src="supportimg/SOME-designguide.png" alt="downloadable designguide til SOME reglerne!" width="20%" height="auto">
+</a>
+  </div>
 
 
 
@@ -50,7 +57,12 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt reiciendis natus 
     <legend>Facebook post</legend>
     <div class="flexBox"> <!-- ./flex -->
     <img src="supportimg/FB-less.png" alt="Facebook post, der visere det første man ser når der scrolles" id="FB1" class="FBpic">
-    <img src="supportimg/FB-mere.png" alt="når der trykkes på mere så kan den fulde tekst læses">
+    <img src="supportimg/FB-mere.png" alt="når der trykkes på mere så kan den fulde tekst læses" class="FBpic">
+    <img src="supportimg/FB2-less.png" alt="Nej endnu et post til facebook" class="FBpic">
+    <img src="supportimg/FB2-mere.png" alt="Når der trykkes på læs mere så bumtibumbum mere tekst" class="FBpic">
+	<img src="supportimg/FB3-less.png" alt="det er magi, ikke så meget tekst" class="FBpic">
+    <img src="supportimg/FB3-mere.png" alt="nu kom der massere af tekst :O" class="FBpic">
+    <img src="supportimg/FB-videoserie.png" alt="Henriks poooost til faaaacebooook" class="FBpic">
     </div>
     </fieldset>
 
@@ -71,8 +83,8 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt reiciendis natus 
     <fieldset id="tikTok">
         <legend>Tiktok post</legend>
         <div class="flexBox"> <!-- ./flex -->
-        <img src="" alt="">
-        <img src="" alt="">
+        <div id="player6"></div>
+        <div id="player7"></div>
         </div>
     </fieldset>
 
