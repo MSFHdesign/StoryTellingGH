@@ -35,11 +35,13 @@ h1 {
 
  /* facebook opslags billederne kontroltårn */
 .FBpic {
+    padding: 1em;
     width: 40%;
     height: auto;
 }
 /* Instagram billedernes kontroltårn */
 .IGpic{
+    padding: 1em;
     width: 40%;
     height: auto;
 }
@@ -68,6 +70,7 @@ legend {
 }
 /* TOOOOONEN ER LAAAAAAAAAGT */
 #TOV {
+    padding-right: 1em;
     width: 30%;
 }
 
@@ -80,4 +83,8 @@ legend {
 #SEOmap {
     width: 50%;
     height: 50%;
+}
+
+#player6 {
+    padding-right: 1em;
 }
